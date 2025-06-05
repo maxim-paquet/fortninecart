@@ -42,33 +42,11 @@ class CartItem extends Model
     }
 
     /**
+     * @param int $newQty
      * @return bool
      */
-    public function addQuantity(): bool
+    public function updateQuantity(int $newQty): bool
     {
-        $newQty = $this->qty++;
-        $saved = $this->update([
-            'qty' => $newQty,
-            'total' => $this->base_price * $newQty,
-        ]);
-
-        if (!$saved) {
-            return false;
-        }
-
-        return $this->cart->calculateAndSaveTotals();
-    }
-
-    /**
-     * @return bool
-     */
-    public function removeQuantity(): bool
-    {
-        if ($this->qty <= 1) {
-            return false;
-        }
-
-        $newQty = $this->qty--;
         $saved = $this->update([
             'qty' => $newQty,
             'total' => $this->base_price * $newQty,
