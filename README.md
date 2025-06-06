@@ -20,6 +20,7 @@ The cart fetched is always the same in the database as there is no notion at the
   - copy .env.example .env
   - php artisan key:generate
   - php artisan migrate
+  - npm install
   - npm run build
 - Navigate to the URL you will have given the project
 - Done!
