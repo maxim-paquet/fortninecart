@@ -68,6 +68,7 @@ class Cart extends Model
     private function getItemTotal(): float
     {
         $itemTotal = 0;
+        $this->fresh();
         if (!empty($this->cartItems())) {
             $this->cartItems()->each(function ($cartItem) use (&$itemTotal) {
                 $itemTotal += $cartItem->total;

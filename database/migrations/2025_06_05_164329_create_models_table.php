@@ -23,12 +23,12 @@ return new class extends Migration
         Model::create([
             'name' => 'AGV K6 S Solid Helmet',
             'description' => 'Color: Matte Black',
-            'img_path' => 'product_images\helmet_1.jpg',
+            'img_path' => 'images/product_images/helmet_1.jpg',
         ]);
         Model::create([
             'name' => 'Shoei RF-1400 Solid Helmet',
             'description' => 'Color: Yellow',
-            'img_path' => 'product_images\helmet_1.jpg',
+            'img_path' => 'images/product_images/helmet_2.jpg',
         ]);
     }
 

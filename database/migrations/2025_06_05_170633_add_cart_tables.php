@@ -43,7 +43,7 @@ return new class extends Migration
             'subtotal' => 2589.89,
             'tax_total' => 387.83,
             'shipping_total' => 0,
-            'grand_total' => 2,977.72,
+            'grand_total' => 2977.72,
         ]);
 
         CartItem::create([
