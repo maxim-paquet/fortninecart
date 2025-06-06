@@ -30,3 +30,5 @@ The cart fetched is always the same in the database as there is no notion at the
 If you want to go back to the original state of the database, run the following:
 
 - php artisan migrate:fresh
+
+ps. I know that quantity update popup is horrendous :)
